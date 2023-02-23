@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        style="@style/recyclerview_color"
+
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivArticleImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/noticia_text_bold"
+                android:paddingStart="5dp"
+                android:text="SOURCE"
+                style="@style/Titles"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivArticleImage"
+                />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/noticia_text_bold"
+                android:maxLines="3"
+                android:paddingStart="5dp"
+                style="@style/Titles"
+                android:text="TITLE"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSource" />
+
+
+            <TextView
+                android:id="@+id/tvPublishedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/noticia_text_bold"
+                style="@style/Titles"
+                android:paddingStart="5dp"
+                android:text="PUBLISHED AT"
+                android:padding="10dp"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <ImageButton
+                android:id="@+id/Dialog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:paddingStart="5dp"
+                android:visibility="visible"
+                android:gravity="center"
+                style="@style/DialogButton"
+
+                ></ImageButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
