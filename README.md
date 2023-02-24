@@ -29,7 +29,7 @@ https://newsapi.org/
 
 <h2 align="left">Getting Started</h2>
 
-Simply navigate to the app folder -> first java file -> com.example.newstest file -> Architecture -> NewsRepository
+Simply navigate to the app folder -> first java file -> first com.example.newstest file -> Architecture -> NewsRepository
 
 Once in the NewsRepository file, simply change the Api key to your personal one, the location to put your Api key is highlighted with "////"
 
